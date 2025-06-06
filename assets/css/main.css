@@ -10,3 +10,26 @@
   --image4: #f8d8b0;
   --image5: #86e7d4;
 }
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--bg-body);
+  font-family: "Outfit", sans-serif;
+}
+
+/* footer */
+.author-info {
+  font-size: 14px;
+  text-align: center;
+  margin-top: 16px;
+  color: rgb(55, 65, 81);
+}
+
+.author-info a {
+  text-decoration: none;
+}
