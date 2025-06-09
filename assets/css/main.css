@@ -22,6 +22,43 @@ body {
   font-family: "Outfit", sans-serif;
 }
 
+img {
+  width: 100%;
+  height: auto;
+}
+
+.container {
+  background-color: var(--bg-section);
+  border-radius: 16px;
+  margin-block: 88px;
+  margin-inline: 96px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.image_1 {
+  background-color: var(--image1);
+}
+
+.image_2 {
+  background-color: var(--image2);
+}
+
+.image_3 {
+  background-color: var(--image3);
+}
+
+.image_4 {
+  background-color: var(--image4);
+}
+
+.image_5 {
+  background-color: var(--image5);
+}
+
 /* footer */
 .author-info {
   font-size: 14px;
