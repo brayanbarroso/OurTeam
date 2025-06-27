@@ -25,12 +25,15 @@ body {
 }
 
 img {
-  width: 100%;
+  display: block;
   height: auto;
+  width: 100%;
 }
 
 .container {
   background-color: var(--bg-section);
+  background-image: url(../image/Background_decor.svg);
+  background-repeat: no-repeat;
   border-radius: 16px;
   margin-block: 88px;
   margin-inline: 96px;
@@ -42,27 +45,46 @@ img {
   grid-template-rows: repeat(2, 1fr);
 }
 
-.info {
-  border: solid 1px red;
+.grid-info {
+  /* border: solid 1px red; */
   grid-column: 1 / 3;
   grid-row: 1 / 2;
-  padding-inline: 24px;
+  padding-inline-end: 80px;
+  padding-inline-start: 24px;
 }
 
-.info h1 {
+.grid-info h1 {
   font-size: 2.5rem;
   font-weight: medium;
   margin-block: 16px;
 }
 
-.info h3 {
+.grid-info h3 {
   color: var(--text);
+  font-weight: 400;
   margin-block-start: 24px;
 }
 
-.info p {
+.grid-info p {
   color: var(--paragraph);
   font-weight: 500;
+}
+
+.grid-item {
+  display: flex;
+  position: relative;
+}
+
+.grid-item .info {
+  color: var(--bg-body);
+  margin: 0 0 20px 24px;
+  position: absolute;
+  bottom: 0;
+}
+
+.grid-item .info h2,
+p {
+  font-size: 1rem;
 }
 
 .image_1 {
