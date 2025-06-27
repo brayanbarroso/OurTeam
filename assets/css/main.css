@@ -35,8 +35,8 @@ img {
   background-image: url(../image/Background_decor.svg);
   background-repeat: no-repeat;
   border-radius: 16px;
-  margin-block-start: 96px;
-  margin-inline: 96px;
+  margin-block-start: 88px;
+  margin-inline: 104px;
   /* max-height: 584px; */
   overflow: hidden;
   /* border: 1px solid red; */
@@ -153,12 +153,15 @@ img {
 
 /* footer */
 .author-info {
-  font-size: 14px;
+  font-size: 1rem;
   text-align: center;
-  margin-top: 16px;
+  margin: 24px 0 24px 0;
+  margin-bottom: 24px;
   color: rgb(55, 65, 81);
 }
 
 .author-info a {
+  color: var(--title);
+  font-weight: 600;
   text-decoration: none;
 }
