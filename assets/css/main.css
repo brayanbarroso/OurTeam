@@ -25,7 +25,7 @@ body {
 }
 
 img {
-  display: block;
+  display: flex;
   height: auto;
   width: 100%;
 }
@@ -43,6 +43,7 @@ img {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
+  z-index: 2;
 }
 
 .grid-info {
@@ -71,6 +72,12 @@ img {
 }
 
 .grid-item {
+  /* Linear Background */
+  background: linear-gradient(
+    180deg,
+    rgba(217, 217, 217, 0) 0%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
   display: flex;
   position: relative;
 }
@@ -85,6 +92,7 @@ img {
 .grid-item .info h2,
 p {
   font-size: 1rem;
+  line-height: 1.5;
 }
 
 .image_1 {
@@ -95,13 +103,23 @@ p {
 
 .image_2 {
   background-color: var(--image2);
+  border-radius: 0 16px 0 0;
   grid-column: 4 / 5;
   grid-row: 1 / 2;
 }
 
 .text {
+  display: flex;
+  align-items: end;
   grid-column: 1 / 2;
   grid-row: 2 / 3;
+  margin: 0 0 24px 24px;
+}
+/* Arrow Up Right Icon */
+.text img {
+  height: 16px;
+  margin-left: 8px;
+  width: 16px;
 }
 
 .image_3 {
@@ -111,6 +129,12 @@ p {
 }
 
 .image_4 {
+  /* Linear Background */
+  background: linear-gradient(
+    180deg,
+    rgba(217, 217, 217, 0) 0%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
   background-color: var(--image4);
   grid-column: 3 / 4;
   grid-row: 2 / 3;
@@ -118,6 +142,7 @@ p {
 
 .image_5 {
   background-color: var(--image5);
+  border-radius: 0 0 16px 0;
   grid-column: 4 / 5;
   grid-row: 2 / 3;
 }
