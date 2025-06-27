@@ -25,9 +25,9 @@ body {
 }
 
 img {
-  display: flex;
-  height: auto;
-  width: 100%;
+  max-width: 100%;
+  object-fit: cover;
+  /* border: 2px solid blue; */
 }
 
 .container {
@@ -37,13 +37,15 @@ img {
   border-radius: 16px;
   margin-block: 88px;
   margin-inline: 96px;
+  max-height: 584px;
+  overflow: hidden;
+  /* border: 1px solid red; */
 }
 
 .grid-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  z-index: 2;
 }
 
 .grid-info {
@@ -74,11 +76,11 @@ img {
 
 .grid-item {
   /* Linear Background */
-  background: linear-gradient(
+  /* background: linear-gradient(
     180deg,
     rgba(217, 217, 217, 0) 0%,
     rgba(0, 0, 0, 0.8) 100%
-  );
+  ); */
   display: flex;
   position: relative;
 }
