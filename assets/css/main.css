@@ -57,18 +57,19 @@ img {
 .grid-info h1 {
   font-size: 2.5rem;
   font-weight: medium;
-  margin-block: 16px;
+  margin-block-start: 24px;
 }
 
 .grid-info h3 {
   color: var(--text);
   font-weight: 400;
-  margin-block-start: 24px;
+  margin-block-start: 32px;
 }
 
 .grid-info p {
   color: var(--paragraph);
   font-weight: 500;
+  margin-block-start: 16px;
 }
 
 .grid-item {
@@ -89,10 +90,10 @@ img {
   bottom: 0;
 }
 
-.grid-item .info h2,
-p {
-  font-size: 1rem;
-  line-height: 1.5;
+.grid-item .info h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-block-end: 8px;
 }
 
 .image_1 {
@@ -113,7 +114,7 @@ p {
   align-items: end;
   grid-column: 1 / 2;
   grid-row: 2 / 3;
-  margin: 0 0 24px 24px;
+  margin: 0 0 32px 24px;
 }
 /* Arrow Up Right Icon */
 .text img {
@@ -129,12 +130,6 @@ p {
 }
 
 .image_4 {
-  /* Linear Background */
-  background: linear-gradient(
-    180deg,
-    rgba(217, 217, 217, 0) 0%,
-    rgba(0, 0, 0, 0.8) 100%
-  );
   background-color: var(--image4);
   grid-column: 3 / 4;
   grid-row: 2 / 3;
