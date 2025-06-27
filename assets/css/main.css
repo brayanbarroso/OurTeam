@@ -81,6 +81,9 @@ img {
     rgba(217, 217, 217, 0) 0%,
     rgba(0, 0, 0, 0.8) 100%
   ); */
+  background-image: url(../image/Gradient.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
   position: relative;
 }
