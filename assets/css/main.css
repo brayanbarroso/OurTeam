@@ -90,6 +90,12 @@ img {
   background-size: cover;
   display: flex;
   position: relative;
+  transition: transform 0.3s ease-in-out;
+}
+
+.grid-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
 }
 
 .grid-item .info {
@@ -327,5 +333,10 @@ img {
     border-radius: 0 0 16px 0;
     grid-column: 1 / 2;
     grid-row: 6 / 7;
+  }
+
+  .author-info {
+    font-size: 0.875rem;
+    margin: 16px 0 16px 0;
   }
 }
